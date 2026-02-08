@@ -1,0 +1,65 @@
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# React Native / Android / iOS build artifacts
+android/build/
+android/app/build/
+ios/build/
+ios/Pods/
+.gradle/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.pyc
+
+# Virtual environments
+pythonenv/
+my_env/
+venv/
+env/
+*/venv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Dataset and uploads (usually large)
+uploads/
+New_Plant_Diseases_Dataset/
+train/
+valid/
+
+# Model files (weights / large artifacts)
+*.h5
+*.keras
+*.pb
+*.tflite
+tfjs_model/
+
+# IDEs and misc
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.user
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Database
+*.sqlite3
+*.db
+
+# If you want to include datasets or trained models for your portfolio,
+# remove the corresponding lines above (New_Plant_Diseases_Dataset/, *.h5, tfjs_model/, etc.).
