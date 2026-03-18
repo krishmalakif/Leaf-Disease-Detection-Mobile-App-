@@ -93,9 +93,5 @@ The following flow has been verified against the Dockerized backend:
 - upload image
 - prediction response from Flask through Node
 
-## Current Production Gaps
-The project is much more portable now, but not fully production-ready yet because:
-- Flask still uses the built-in development server
-- backend dependencies still report known npm vulnerabilities during image build
-- password reset email requires real email credentials
+
 
