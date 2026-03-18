@@ -1,0 +1,10 @@
+node_modules/
+npm-debug.log*
+flaskenv/
+pythonenv/
+__pycache__/
+*.pyc
+uploads/*
+!uploads/.gitkeep
+*.log
+.env

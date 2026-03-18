@@ -1,65 +1,79 @@
-# Node / JS
+# ===== Node / JS =====
 node_modules/
 npm-debug.log*
 yarn-error.log*
 package-lock.json
 yarn.lock
+*.log
 
-# React Native / Android / iOS build artifacts
-android/build/
-android/app/build/
-ios/build/
-ios/Pods/
-.gradle/
-build/
+# ===== React Native =====
+GracePlant/android/build/
+GracePlant/android/app/build/
+GracePlant/android/.gradle/
+GracePlant/ios/build/
+GracePlant/ios/Pods/
+GracePlant/ios/DerivedData/
+.metro-health-check*
 
-# Python
+# ===== Python =====
 __pycache__/
 *.py[cod]
+*.pyc
+*.pyo
+*.pyd
 *.so
 *.egg-info/
 dist/
 build/
-*.pyc
 
-# Virtual environments
+# ===== Virtual Environments =====
 pythonenv/
 my_env/
+flaskenv/
 venv/
 env/
-*/venv/
+.venv/
 
-# Jupyter
-.ipynb_checkpoints
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*.ipynb
 
-# Dataset and uploads (usually large)
-uploads/
-New_Plant_Diseases_Dataset/
-train/
-valid/
+# ===== Dataset (large files) =====
+New_Plant_Diseases_Dataset/train/
+New_Plant_Diseases_Dataset/valid/
+New_Plant_Diseases_Dataset/test/
+test/
 
-# Model files (weights / large artifacts)
+# ===== ML Model files (large) =====
 *.h5
 *.keras
 *.pb
 *.tflite
+*.bin
 tfjs_model/
 
-# IDEs and misc
-.vscode/
-.idea/
-.DS_Store
-*.suo
-*.user
-*.log
+# ===== Uploads =====
+LeafScaner/uploads/*
+!LeafScaner/uploads/.gitkeep
 
-# Environment files
+# ===== Environment files (secrets) =====
 .env
 .env.*
+!.env.example
 
-# Database
-*.sqlite3
-*.db
+# ===== IDE =====
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db
 
-# If you want to include datasets or trained models for your portfolio,
-# remove the corresponding lines above (New_Plant_Diseases_Dataset/, *.h5, tfjs_model/, etc.).
+# ===== Logs =====
+*.log
+startup.log
+flask.log
+
+# ===== Gradle =====
+.gradle/
+local.properties

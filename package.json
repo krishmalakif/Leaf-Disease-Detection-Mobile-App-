@@ -1,0 +1,11 @@
+{
+  "name": "leaf-disease-detection-vu-project",
+  "private": true,
+  "scripts": {
+    "backend:up": "docker compose up --build -d",
+    "backend:down": "docker compose down",
+    "backend:logs": "docker compose logs -f",
+    "mobile:start": "npm --prefix GracePlant start -- --reset-cache",
+    "mobile:android": "npm --prefix GracePlant run android"
+  }
+}

@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "62aebb01-22fa-48a0-ab20-27ae886c8062",
+		"name": "Leaf Scan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33546883"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"kaan64723743473674\",\r\n  \"email\": \"mkaan4783@gmail.com\",\r\n  \"password\": \"khan#55200112\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/leafscaner/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"leafscaner",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"mkaan4783@gmail.com\",\r\n  \"password\": \"khan#55200112\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/leafscaner/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"leafscaner",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"name@gmail.com\",\r\n  \"currentPassword\": \"dhaid212\",\r\n  \"newPassword\": \"hashs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/leafscaner/reset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"leafscaner",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "leafImage",
+							"type": "file",
+							"src": "postman-cloud:///1eee5d3a-3010-4fc0-b4d9-8e521f4d4a03"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/leafscaner/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"leafscaner",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Capture",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/leafscaner/capture",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"leafscaner",
+						"capture"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
